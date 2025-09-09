@@ -13,6 +13,6 @@ eachSystem (
 
     mkBunDerivation = pkgs.callPackage ./mkBunDerivation.nix { inherit mkBunNodeModules; };
 
-    treefmt = inputs.treefmt-nix.lib.evalModule pkgs (import ./treefmt-config.nix);
+    treefmt = inputs.treefmt-nix.lib.evalModule pkgs (import ./treefmtConfig.nix);
   }
 )
